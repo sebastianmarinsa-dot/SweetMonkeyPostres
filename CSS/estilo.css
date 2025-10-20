@@ -129,13 +129,89 @@ nav a.active {
   font-size: 1.1rem;
 }
 
-.contador {
-  background: #fff3e0;
-  color: #3e2723;
-  padding: 8px 16px;
-  border-radius: 8px;
+.contenedor {
+  text-align: center;
+  background: linear-gradient(180deg, #fff3e0 0%, #ffe0b2 100%);
+  padding: 40px 20px;
+  border-radius: 20px;
+  max-width: 600px;
+  margin: 40px auto;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+.contenedor h2 {
+  color: #5d4037;
+  font-size: 1.8rem;
+  font-family: "Chewy Bubble", cursive;
+  margin-bottom: 20px;
+}
+
+#contador {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.bloque {
+  background: #fff;
+  padding: 20px 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.bloque:hover {
+  transform: scale(1.05);
+}
+
+.bloque span {
+  display: block;
+}
+
+.bloque #dias,
+.bloque #horas,
+.bloque #minutos,
+.bloque #segundos {
+  font-size: 2rem;
   font-weight: bold;
-  display: inline-block;
+  color: #6d4c41;
+  font-family: "Chewy Bubble", cursive;
+}
+
+.etiqueta {
+  font-size: 0.9rem;
+  color: #8d6e63;
+}
+
+#mensaje {
+  margin-top: 25px;
+  font-size: 1.3rem;
+  color: #4e342e;
+  font-weight: bold;
+  font-family: "Chewy Bubble", cursive;
+}
+
+/* 📱 Ajuste móvil */
+@media (max-width: 768px) {
+  .contenedor {
+    padding: 25px 15px;
+  }
+
+  .bloque {
+    padding: 15px 20px;
+  }
+
+  .bloque #dias,
+  .bloque #horas,
+  .bloque #minutos,
+  .bloque #segundos {
+    font-size: 1.6rem;
+  }
+
+  .etiqueta {
+    font-size: 0.8rem;
+  }
 }
 
 .btn {
@@ -424,7 +500,7 @@ footer p {
   font-size: 1.5rem;
   font-weight: bold;
   color: #6d4c41;
-  background: #fff3e0;
+  background: #000000;
   display: inline-block;
   padding: 10px 20px;
   border-radius: 10px;
