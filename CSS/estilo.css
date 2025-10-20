@@ -18,6 +18,8 @@ body {
 }
 
 
+
+
 .Titulo{
   text-align: center;
   color: #fff;
@@ -430,12 +432,8 @@ footer p {
   box-shadow: 0 3px 8px rgba(0,0,0,0.1);
 }
 
-.menu-toggle {
-  display: none;
-  font-size: 2rem;
-  color: #3e2723;
-  cursor: pointer;
-  user-select: none;
+.menu-toggle{
+  color: #fff;
 }
 
 @media (min-width: 769px) {
@@ -450,37 +448,10 @@ footer p {
     display: block;
   }
 
-  nav {
-    width: 100%;
-  }
 
-  #nav-menu {
-    display: none;
-    width: 100%;
-    background: #ffcc80;
-    text-align: center;
-    padding: 15px 0;
-    border-top: 2px solid #6d4c41;
-  }
-
-  #nav-menu ul {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  #nav-menu a {
-    display: inline-block;
-    font-size: 1.1rem;
-    color: #3e2723;
-    padding: 10px 0;
-  }
-
-  #nav-menu a:hover {
-    background: rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-  }
 
   .banderas {
     margin-top: 10px;
   }
 }   
+
